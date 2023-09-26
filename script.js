@@ -99,8 +99,11 @@ playElem.addEventListener("click",()=>{
     if(!playbtn){
       audioElem.play()   
       playbtn=true
+       playElem.innerHTML=`<i class="fa-solid fa-pause"></i>`
     }else {
    audioElem.pause()
-   playbtn=false}
+   playbtn=false 
+   playElem.innerHTML=`<i class="fa-solid fa-play"></i>`
+}
 
 });
